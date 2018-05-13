@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<!--meta title="AstrologyToolkit" package="AstrologyToolkit" version="1.0.0" company="test" /-->
+	<meta title="AstrologyToolkit" package="com.leapinglight.AstrologyToolkit" version="1.0.0" company="test" />
+	
+	<!-- output -->
+	<app main="Main" file="AstrologyToolkit" path="bin" />
+	
+	<window background="#000000" fps="60" />
+	<window width="512" height="768" unless="mobile" />
+	<window orientation="portrait" vsync="false" antialiasing="0" if="cpp" />
+	
+	<!-- classpath, haxe libs -->
+	<source path="." />
+	<haxelib name="openfl" />
+	<haxelib name="hxtime" />
+	<haxelib name="actuate" />
+	
+	<!-- assets -->
+	<icon path="assets/openfl.svg" />
+	<assets path="assets" include="*" exclude="nme.svg" />
+	<assets path="/HaxeToolkit/haxe/lib/llastro/1,0,0/assets" include="*" exclude="nme.svg" />
+	
+	
+	
+	<!-- optimize output
+	<haxeflag name="-dce full" /> -->
+	
+</project>

@@ -1,0 +1,11 @@
+{
+	"name": "llastro",
+	"url": "http://www.leapinglight.com/",
+	"license": "closed source (C) Roy Andre Gundersen, 2008",
+	"tags": [],
+	"description": "Leaping Light Astrology",
+	"version": "1.0.0",
+	"releasenote": "",
+	"contributors": [ "roy" ],
+	"dependencies": {}
+}
